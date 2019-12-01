@@ -55,7 +55,7 @@
                     showBorder:true
                 },
                 columns: [
-                    {title: '序号', 
+                    {title: '序号',
                     render: (h, params) => {
                         return h('span', params.index + (this.dataFilter.page- 1) * this.dataFilter.pageSize + 1);
                     },
@@ -182,7 +182,7 @@
             onModalCancel(data){
                 this.examImportModal = false;
                 if(data){
-                    this.getData()                    
+                    this.getData()
                 }
             },
             /**
